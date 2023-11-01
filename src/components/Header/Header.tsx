@@ -1,29 +1,35 @@
 import React from "react";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import Container from "../Container";
+import { NavLink } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import { Nav, UserBar, Auth, NavBar, SVG } from "./Header.styled";
+import symbolDefs from "../../img/symbol-defs.svg";
 
 function Header() {
   return (
-    <>
-      <Navbar
-        bg="dark"
-        data-bs-theme="dark"
-        fixed="top"
-        className="py-3"
-      >
-        <Container>
-          <Navbar.Brand href="#home">Logo</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Catalog</Nav.Link>
-            <Nav.Link href="#pricing">Profile</Nav.Link>
-          </Nav>
-          <Button className="mx-3" variant="light">
-            Sing In
-          </Button>
-          <Button variant="outline-light">Sing Up</Button>
-        </Container>
-      </Navbar>
-    </>
+    <Nav>
+      <Container>
+        <NavBar>
+          <UserBar>
+            <NavLink to="/">
+              <SVG width="20" height="20">
+                <use href={symbolDefs + "#icon-spoon-knife"}></use>
+              </SVG>
+            </NavLink>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="catalog">Catalog</NavLink>
+          </UserBar>
+          <Auth>
+            <NavLink to="singin">
+              <Button variant="primary">Sing In</Button>
+            </NavLink>
+            <NavLink to="singup">
+              <Button variant="primary">Sing Up</Button>
+            </NavLink>
+          </Auth>
+        </NavBar>
+      </Container>
+    </Nav>
   );
 }
 
