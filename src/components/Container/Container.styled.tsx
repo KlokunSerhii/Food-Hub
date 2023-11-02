@@ -15,8 +15,8 @@ export const ContainerBox = styled.div`
     padding-right: 32px;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
     padding-left: 96px;
     padding-right: 96px;
   }

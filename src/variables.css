@@ -1,8 +1,9 @@
 :root {
-  --accent-dark-color: #662225; /*Красный лук*/
-  --accent-bright-color: #b51d0a; /*Пряный*/
-  --accent-light-color: #ead39c; /*Пастернак*/
-  --accent-medium-color: #7d5e3c; /*Душистый перец*/
+  --accent-dark-color: rgb(201, 187, 183);
+  --accent-bright-color: rgb(179, 29, 9);
+  --accent-light-color: rgb(234, 210, 154);
+  --accent-medium-color: rgb(240, 146, 46);
 
-  --white-color: #ffffff
+  --white-color: #ffffff;
+  --black-color: #000000;
 }

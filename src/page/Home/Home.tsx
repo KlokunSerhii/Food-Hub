@@ -1,13 +1,18 @@
 import React from "react";
 import Container from "../../components/Container";
 import Welcome from "../../components/Welcome";
-import { Section } from "./Home.styled";
+import Title from "../../components/Title";
+
+import { Section, Box } from "./Home.styled";
 
 function Home() {
   return (
     <Section>
       <Container>
-        <Welcome />
+        <Box>
+          <Title title="Раді Вас вітати на 'Light Kitchen' " />
+          <Welcome />
+        </Box>
       </Container>
     </Section>
   );

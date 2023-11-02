@@ -10,21 +10,21 @@ function Header() {
       <Container>
         <NavBar>
           <UserBar>
-            <NL to="/" >
-              <SVG width="20" height="20">
+            <NL to="/">
+              <SVG width="50" height="50">
                 <use href={symbolDefs + "#icon-spoon-knife"}></use>
               </SVG>
             </NL>
             <NL to="/">Home</NL>
-            <NL to="catalog">Catalog</NL>
+            <NL to="soups">Soups</NL>
+            <NL to="salads">Salads</NL>
+            <NL to="main_dishes">Main Dishes</NL>
+            <NL to="dessert">Desserts</NL>
+            <NL to="children_meals">Children`s Meals</NL>
           </UserBar>
           <Auth>
-            <Button to='singin'>
-              Sing In
-            </Button>
-            <Button to='singup'>
-              Sing Up
-            </Button>
+            <Button to="singin">Sing In</Button>
+            <Button to="singup">Sing Up</Button>
           </Auth>
         </NavBar>
       </Container>

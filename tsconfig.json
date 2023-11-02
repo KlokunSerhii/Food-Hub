@@ -27,9 +27,9 @@
 		"noEmit": true,
 		"jsx": "react-jsx",
 		"sourceMap": true
-
 	},
 	"include": [
-		"src"
+		"src",
+		"@types"
 	]
 }
