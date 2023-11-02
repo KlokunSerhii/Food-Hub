@@ -9,6 +9,8 @@
 		"typeRoots": [
 			"./types"
 		],
+		"rootDir": "./src",
+		"outDir": "./dist",
 		"allowJs": true,
 		"skipLibCheck": true,
 		"esModuleInterop": true,
@@ -20,8 +22,12 @@
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
+		"preserveConstEnums": true,
+		"strictNullChecks": true,
 		"noEmit": true,
-		"jsx": "react-jsx"
+		"jsx": "react-jsx",
+		"sourceMap": true
+
 	},
 	"include": [
 		"src"
