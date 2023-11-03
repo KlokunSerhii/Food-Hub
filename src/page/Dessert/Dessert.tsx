@@ -1,8 +1,13 @@
 import React from "react";
 import Container from "../../components/Container";
+import { Section } from "./Dessert.styled";
 
 function Dessert() {
-  return <Container>Dessert</Container>;
+  return (
+    <Section>
+      <Container>Dessert</Container>
+    </Section>
+  );
 }
 
 export default Dessert;

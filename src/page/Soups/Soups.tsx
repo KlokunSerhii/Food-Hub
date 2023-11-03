@@ -1,7 +1,15 @@
 import React from "react";
+import Container from "../../components/Container";
+import { Section } from "./Soups.styled";
 
 function Soups() {
-  return <div>Soups</div>;
+  return (
+      <Section>
+    <Container>
+        Soups
+    </Container>
+        </Section>
+  );
 }
 
 export default Soups;

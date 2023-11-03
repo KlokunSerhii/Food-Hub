@@ -23,8 +23,8 @@ function Header() {
             <NL to="children_meals">Children`s Meals</NL>
           </UserBar>
           <Auth>
-            <Button to="singin">Sing In</Button>
-            <Button to="singup">Sing Up</Button>
+            <Button to="singin" type="button">Sing In</Button>
+            <Button to="singup" type="button">Sing Up</Button>
           </Auth>
         </NavBar>
       </Container>

@@ -4,13 +4,14 @@ import { Btn } from "./Button.styled";
 
 interface IButton {
   children: ReactNode;
-  to:string
+  to?: string;
+  type: "button" | "submit" | "reset" | undefined;
 }
 
-const Button: FC<IButton> = ({ children, to}) => {
+const Button: FC<IButton> = ({ children, to,type}) => {
   return (
-    <NavLink to={to}>
-      <Btn type="button">{children}</Btn>
+    <NavLink to={to || ""}>
+      <Btn type={type}>{children}</Btn>
     </NavLink>
   );
 };
