@@ -18,9 +18,9 @@ function Header() {
             <NL to="/">Home</NL>
             <NL to="soups">Soups</NL>
             <NL to="salads">Salads</NL>
-            <NL to="main_dishes">Main Dishes</NL>
+            <NL to="main_dishes">Main</NL>
             <NL to="dessert">Desserts</NL>
-            <NL to="children_meals">Children`s Meals</NL>
+            <NL to="children_meals">Children`s</NL>
           </UserBar>
           <Auth>
             <Button to="singin" type="button">Sing In</Button>
